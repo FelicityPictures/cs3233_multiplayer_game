@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "bf398fa2-49c0-4022-a527-b5a752e5be0a",
+            "Value": {
+                "id": "730923d5-6389-42f7-a6e9-0862b0403eb6",
+                "resourcePath": "objects\\obj_craneHand\\obj_craneHand.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c0223eb6-d6d3-48f4-8571-5716d051a8ac",
             "Value": {
                 "id": "f9718e52-f579-4a3a-8e79-a002514bbe0f",

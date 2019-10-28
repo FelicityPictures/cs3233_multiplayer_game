@@ -18,9 +18,9 @@ if(objectHeld != noone){
 if(keyboard_check_pressed(vk_space)){
 	if(craneHands.open){
 		craneHands.image_speed = 1
-		objectClamped = collision_rectangle(x-(craneHands.sprite_width/2), y-(craneHands.sprite_height/2),
-							x+(craneHands.sprite_width/2), y+(craneHands.sprite_height/2),
-							obj_block, false, true)
+		objectClamped = collision_rectangle(x-25, y-(craneHands.sprite_height/2),
+							x+25, y+(craneHands.sprite_height/2),
+							obj_block, true, true)
 		if(objectClamped != noone){
 			objectHeld = objectClamped
 			objectHeldDistanceY = objectHeld.y - craneHands.y
@@ -33,6 +33,10 @@ if(keyboard_check_pressed(vk_space)){
 			objectHeld = noone
 		}
 	}
+}
+
+if(!craneHands.open && objectHeld == noone){
+	craneHands.image_speed = -1
 }
 
 craneHands.x = x
