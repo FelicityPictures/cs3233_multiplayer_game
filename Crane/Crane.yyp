@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "962c800e-74ed-4612-b7a2-77968fa739c0",
+            "Value": {
+                "id": "49354723-b369-4b16-bcc1-3eea4019be75",
+                "resourcePath": "objects\\obj_blockgen\\obj_blockgen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "98ecfb82-6c67-4321-a91d-692ed1ba9a3b",
             "Value": {
                 "id": "88127edb-3006-427f-b30a-c81a9ff2748e",
