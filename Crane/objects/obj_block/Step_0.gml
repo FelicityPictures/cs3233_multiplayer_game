@@ -8,4 +8,9 @@ if(static == false){
 		y = hitObject.y - hitObject.sprite_height
 		velocityY = 0
 	}
+	hitObject = collision_rectangle(x-(sprite_width/2), y-(sprite_height/2), x+(sprite_width/2), y+(sprite_height/2), obj_floor, true, true)
+	if(hitObject != noone){
+		y = hitObject.y - hitObject.sprite_height
+		velocityY = 0
+	}
 }
