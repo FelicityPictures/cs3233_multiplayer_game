@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "b54bf66f-1ec0-4278-92e4-8b9a69ce90b4",
+            "Value": {
+                "id": "af463baf-9749-4c9f-ad42-6c405ec9c4c3",
+                "resourcePath": "sprites\\spr_water\\spr_water.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf398fa2-49c0-4022-a527-b5a752e5be0a",
             "Value": {
                 "id": "730923d5-6389-42f7-a6e9-0862b0403eb6",
