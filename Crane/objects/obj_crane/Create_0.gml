@@ -8,3 +8,4 @@ velocityY = 3
 
 objectHeld = noone
 objectHeldDistanceY = 0
+objectHeldDistanceX = 0
