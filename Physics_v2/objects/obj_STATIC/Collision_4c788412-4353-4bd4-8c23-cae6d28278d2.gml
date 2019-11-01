@@ -1,2 +1,1 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description DON'T DELETE - needed to initialize physics
