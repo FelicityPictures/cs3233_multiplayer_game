@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "04be8673-5d76-48d8-a96f-695fee27de0b",
+            "Value": {
+                "id": "60eb38ba-a234-4564-a736-e6acd690a83f",
+                "resourcePath": "sprites\\spr_water_shine\\spr_water_shine.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0b841dab-7108-48f6-8701-fe0ff40e53a1",
             "Value": {
                 "id": "5720f205-ae50-4e7a-a22c-71f114ddfa95",
