@@ -1,7 +1,8 @@
-x = room_width/2
+x = 3 * (room_width/4)
 y = room_height/2
+depth = -100
 
-craneHands = instance_create_depth(x, y, -5, obj_craneHands)
+craneHands = instance_create_depth(x, y, -50, obj_blueCraneHands)
 
 velocityX = 3
 velocityY = 3

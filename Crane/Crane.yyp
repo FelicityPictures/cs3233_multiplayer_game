@@ -175,10 +175,34 @@
             }
         },
         {
+            "Key": "719ae1da-a9bd-489d-96a8-c936a94845e3",
+            "Value": {
+                "id": "e09dea88-cb26-4fbf-8f23-d44cbd07eda7",
+                "resourcePath": "objects\\obj_leftCrane\\obj_leftCrane.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "71c44915-4d57-478c-a3a4-ea93e445774c",
+            "Value": {
+                "id": "04e855e8-060c-476f-89ae-f15d3651bd64",
+                "resourcePath": "sprites\\spr_redCraneHands\\spr_redCraneHands.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7db26366-1704-4095-869b-156efc58dc50",
             "Value": {
                 "id": "62e60ace-8e6a-41fa-b2cf-b5e3a886e691",
                 "resourcePath": "objects\\obj_block_L\\obj_block_L.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "83908ec3-14e0-4e0e-9e26-b1386bfa18c4",
+            "Value": {
+                "id": "756e1c38-865c-4953-811f-51ce756c79d3",
+                "resourcePath": "objects\\obj_redCraneHands\\obj_redCraneHands.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -196,6 +220,14 @@
                 "id": "5220279f-dffd-42af-a47f-0cac67ff1b47",
                 "resourcePath": "views\\8e9256f8-8ea4-4c23-a992-cffff6f3e0a2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "901e7281-fcb0-487c-ac6d-f4884e969505",
+            "Value": {
+                "id": "8587d2d0-75ab-4562-b899-ce54ed46c94c",
+                "resourcePath": "objects\\obj_gui\\obj_gui.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -234,7 +266,7 @@
             "Key": "a19f8933-5292-4490-bedf-7afb8452be78",
             "Value": {
                 "id": "311868ff-4216-43ee-8e24-3719b277aad4",
-                "resourcePath": "sprites\\spr_craneHands\\spr_craneHands.yy",
+                "resourcePath": "sprites\\spr_blueCraneHands\\spr_blueCraneHands.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -338,7 +370,7 @@
             "Key": "dc6977af-9218-4c6e-bb90-2a220aa915ce",
             "Value": {
                 "id": "8344712c-1a84-4c5c-b6d6-b735b47ff647",
-                "resourcePath": "objects\\obj_crane\\obj_crane.yy",
+                "resourcePath": "objects\\obj_rightCrane\\obj_rightCrane.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -354,7 +386,7 @@
             "Key": "e6ecf563-b051-49aa-b6d2-dbc2e4e0e4ef",
             "Value": {
                 "id": "cbc5904a-3daa-4531-baaf-fb236ee92005",
-                "resourcePath": "objects\\obj_craneHands\\obj_craneHands.yy",
+                "resourcePath": "objects\\obj_blueCraneHands\\obj_blueCraneHands.yy",
                 "resourceType": "GMObject"
             }
         },

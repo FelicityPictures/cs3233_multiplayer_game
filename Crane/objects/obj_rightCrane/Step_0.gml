@@ -1,4 +1,4 @@
-if(keyboard_check(vk_left)){
+if(keyboard_check(vk_left) and x > (craneHands.sprite_width/2)){
 	x -= velocityX
 	if(objectHeld != noone){
 		objectHeld.x = x + objectHeldDistanceX
@@ -6,7 +6,7 @@ if(keyboard_check(vk_left)){
 		current = collision_line(objectHeld.x - (objectHeld.sprite_width/2), objectHeld.y,
 			objectHeld.x - (objectHeld.sprite_width/2), objectHeld.y - objectHeld.sprite_height,
 			obj_block, true, true)
-		if(current != noone){
+		if(current != noone && !current.static){
 			current.x -= velocityX
 			/*
 			current = collision_line(current.x - (current.sprite_width/2), current.y,
@@ -15,7 +15,7 @@ if(keyboard_check(vk_left)){
 			*/
 		}
 	}
-}else if(keyboard_check(vk_right)){
+}else if(keyboard_check(vk_right) and x < room_width - (craneHands.sprite_width/2)){
 	x += velocityX
 	if(objectHeld != noone){
 		objectHeld.x = x + objectHeldDistanceX
@@ -23,7 +23,7 @@ if(keyboard_check(vk_left)){
 		current = collision_line(objectHeld.x+(objectHeld.sprite_width/2), objectHeld.y,
 			objectHeld.x+(objectHeld.sprite_width/2), objectHeld.y-objectHeld.sprite_height,
 			obj_block, true, true)
-		if(current != noone){
+		if(current != noone && !current.static){
 			current.x += velocityX
 			/*
 			current = collision_line(current.x+(current.sprite_width/2), current.y,
@@ -46,8 +46,9 @@ if(keyboard_check(vk_up)){
 	}
 }
 
-if(keyboard_check_pressed(vk_space)){
-	if(craneHands.open){
+if(keyboard_check_pressed(ord("M"))){
+	//closes hand
+	if(craneHands.open and (y < 150 or x > (room_width/2) + (craneHands.sprite_width/2))){
 		craneHands.image_speed = 1
 		objectClamped = collision_rectangle(x-25, y-(craneHands.sprite_height/2),
 							x+25, y+(craneHands.sprite_height/2),
@@ -64,8 +65,9 @@ if(keyboard_check_pressed(vk_space)){
 				objectHeldDistanceX = objectHeld.x - craneHands.x
 				objectHeld.static = true
 			}
+			objectHeld.depth = -100
 		}
-	}else{
+	}else if(x > (room_width/2) + (craneHands.sprite_width/2)){
 		craneHands.image_speed = -1
 		if(objectHeld != noone){
 			objectHeld.static = false

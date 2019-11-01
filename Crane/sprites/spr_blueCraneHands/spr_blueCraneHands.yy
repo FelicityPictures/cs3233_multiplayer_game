@@ -2,7 +2,7 @@
     "id": "a19f8933-5292-4490-bedf-7afb8452be78",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_craneHands",
+    "name": "spr_blueCraneHands",
     "For3D": false,
     "HTile": false,
     "VTile": false,
