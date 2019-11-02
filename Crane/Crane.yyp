@@ -31,10 +31,26 @@
     },
     "resources": [
         {
+            "Key": "0433a032-1177-480b-b578-25f738c22f08",
+            "Value": {
+                "id": "e3d907a4-42b5-48ac-904f-beca7b4a51e1",
+                "resourcePath": "sprites\\spr_timer\\spr_timer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0b841dab-7108-48f6-8701-fe0ff40e53a1",
             "Value": {
                 "id": "5720f205-ae50-4e7a-a22c-71f114ddfa95",
                 "resourcePath": "objects\\obj_block_I\\obj_block_I.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0d38158e-2e3a-4809-bd98-ef1277b79fca",
+            "Value": {
+                "id": "ae7d278b-1220-4524-8e60-bd79975f4d3f",
+                "resourcePath": "objects\\obj_timer\\obj_timer.yy",
                 "resourceType": "GMObject"
             }
         },

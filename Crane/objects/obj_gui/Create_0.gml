@@ -1,2 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+timerX = 975
+timerY = 50
+depth = -75

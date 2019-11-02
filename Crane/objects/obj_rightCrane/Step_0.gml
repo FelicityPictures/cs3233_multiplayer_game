@@ -82,3 +82,8 @@ if(!craneHands.open && objectHeld == noone){
 
 craneHands.x = x
 craneHands.y = y
+
+if(global.timeLeft <= 0){
+	instance_destroy(craneHands)
+	instance_destroy()
+}

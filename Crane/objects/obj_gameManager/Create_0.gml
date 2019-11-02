@@ -1,4 +1,7 @@
 global.gravity = 9.8 / room_speed
+global.timeLeft = 180000000
+global.timeOver = false
+global.timeLeft = 5000000
 
 instance_create_depth(608, 700, 1, obj_block_O)
 instance_create_depth(608, 200, 1, obj_block_L)
