@@ -1,9 +1,10 @@
 if(room == rm_game){
 	
 	if(global.timeLeft > 0){
-		//draw middle line
+		// DRAW MIDDLE LINE
 		//draw_set_color(c_black)
 		//draw_line_width(room_width/2, 150, room_width/2, room_height, 4)
+		
 		// draw_set_circle_precision(c_white)
 		
 		//drawTimer
