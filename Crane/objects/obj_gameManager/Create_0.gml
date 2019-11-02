@@ -1,9 +1,6 @@
 global.gravity = 9.8 / room_speed
-global.timeLeft = 180000000
+global.timeLeft = 120000000
 global.timeOver = false
-
-instance_create_depth(608, 700, 1, obj_block_O)
-instance_create_depth(608, 200, 1, obj_block_L)
 
 window_set_size(room_width*1, room_height*1)
 
