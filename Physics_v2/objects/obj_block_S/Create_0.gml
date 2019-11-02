@@ -1,0 +1,16 @@
+// ADDITIONAL HITBOX/FIXTURE
+
+var fixture = physics_fixture_create()
+physics_fixture_set_polygon_shape(fixture)
+
+physics_fixture_add_point(fixture, 0, 32)
+physics_fixture_add_point(fixture, 64, 32)
+physics_fixture_add_point(fixture, 64, 64)
+physics_fixture_add_point(fixture, 0, 64)
+
+physics_fixture_set_friction(fixture, 1.5)
+physics_fixture_set_linear_damping(fixture, 0.4)
+physics_fixture_set_angular_damping(fixture, 0.4)
+
+physics_fixture_bind(fixture, id)
+physics_fixture_delete(fixture)
