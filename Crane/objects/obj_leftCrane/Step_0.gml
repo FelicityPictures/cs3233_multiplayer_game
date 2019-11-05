@@ -34,8 +34,8 @@ if(keyboard_check_pressed(vk_tab)){
 			if(objectHeld.image_xscale == 0.5){
 				objectHeld.image_xscale = 1
 				objectHeld.image_yscale = 1
-				objectHeldDistanceY = objectHeld.sprite_height
-				objectHeldDistanceX = 0
+				objectHeldDistanceY = 0
+				objectHeldDistanceX = -objectHeld.sprite_width/2
 			}else{
 				objectHeldDistanceY = objectHeld.y - craneHands.y
 				objectHeldDistanceX = objectHeld.x - craneHands.x
