@@ -1,3 +1,4 @@
+firstGrabbed = true
 static = false
 
 // ADDITIONAL HITBOX/FIXTURE

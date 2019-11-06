@@ -1,1 +1,2 @@
+firstGrabbed = true
 static = false

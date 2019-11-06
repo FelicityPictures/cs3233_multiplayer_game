@@ -47,6 +47,9 @@ if(keyboard_check_pressed(vk_tab)){
 		craneHands.image_speed = -1
 		if(objectHeld != noone){
 			objectHeld.static = false
+			if objectHeld.firstGrabbed {
+				objectHeld.firstGrabbed = false
+			}
 			objectHeld = noone
 		}
 	}
