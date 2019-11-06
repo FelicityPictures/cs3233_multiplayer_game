@@ -1,7 +1,7 @@
 global.gravityY = 100
 global.timeLeft = 120000000
 global.timeOver = false
-// global.timeLeft = 3000000
+//global.timeLeft = 3000000
 
 window_set_size(room_width*1, room_height*1)
 physics_world_gravity(0, global.gravityY)
