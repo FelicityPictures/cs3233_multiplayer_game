@@ -43,12 +43,18 @@ if(keyboard_check_pressed(vk_tab)){
 			}
 			objectHeld.depth = -100
 		}
-	}else if(x < (room_width/2) - (craneHands.sprite_width/2)){
+	}else if(x < (room_width/2)){
 		craneHands.image_speed = -1
 		if(objectHeld != noone){
 			objectHeld.static = false
+			if objectHeld.firstGrabbed {
+				objectHeld.firstGrabbed = false
+			}
 			objectHeld = noone
 		}
+	}else if(craneHands.image_speed = 0){
+		dontobject = instance_create_depth(x, y, -1000, obj_dont)
+		dontobject.image_xscale = -1
 	}
 }
 
