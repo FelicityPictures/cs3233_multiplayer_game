@@ -8,11 +8,6 @@ if(keyboard_check(vk_left) and x > (craneHands.sprite_width/2)){
 			obj_block, true, true)
 		if(current != noone && !current.static){
 			current.x -= velocityX
-			/*
-			current = collision_line(current.x - (current.sprite_width/2), current.y,
-				current.x - (current.sprite_width/2), current.y - current.sprite_height,
-				obj_block, true, true)
-			*/
 		}
 	}
 }else if(keyboard_check(vk_right) and x < room_width - (craneHands.sprite_width/2)){
@@ -25,11 +20,6 @@ if(keyboard_check(vk_left) and x > (craneHands.sprite_width/2)){
 			obj_block, true, true)
 		if(current != noone && !current.static){
 			current.x += velocityX
-			/*
-			current = collision_line(current.x+(current.sprite_width/2), current.y,
-				current.x+(current.sprite_width/2), current.y-current.sprite_height,
-				obj_block, true, true)
-			*/
 		}
 	}
 }
