@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "be8b022a-6019-4639-a10f-7006ffb43b36",
+            "Value": {
+                "id": "9f19ec71-c93f-4027-b3e6-f2bd60954ab0",
+                "resourcePath": "objects\\obj_gameManager\\obj_gameManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c0223eb6-d6d3-48f4-8571-5716d051a8ac",
             "Value": {
                 "id": "8192ee5c-9f6c-4c72-8129-91d51a454a3e",
