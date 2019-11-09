@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "19e2056b-f681-4362-8abd-754f18ae7b52",
+            "Value": {
+                "id": "22f11e15-c4de-4328-9b17-96aeb28fdd5b",
+                "resourcePath": "objects\\printObject\\printObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "19e225cd-1656-47da-bcc8-1bf1ce566c05",
             "Value": {
                 "id": "f557636f-51ae-4f16-9adc-0dea1571e623",
