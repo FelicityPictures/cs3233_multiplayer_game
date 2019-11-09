@@ -3,5 +3,5 @@ if(global.timeLeft > 0){
 }
 
 if(keyboard_check(vk_space)){
-	calculateScore()	
+	calculateScore()
 }
