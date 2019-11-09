@@ -8,4 +8,9 @@ if (room == rm_game) {
 		instance_create_depth(512, 400, 0, obj_countstart)
 		alarm[0] = 3 * room_speed
 	}
+} else if (room == rm_success) or (room == rm_failure) {
+	if (!instance_nearest(x,y,obj_play)) and (!instance_nearest(x,y,obj_again)) and (!instance_exists(obj_countstart)){
+		instance_create_depth(512, 400, 0, obj_countstart)
+		alarm[0] = 3 * room_speed
+	}
 }
