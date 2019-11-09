@@ -1,5 +1,4 @@
-// if (room == rm_game) {
-if (true == false) {
+if (room == rm_game) {
 	window_set_size(room_width*1, room_height*1)
 	physics_world_gravity(0, global.gravityY)
 

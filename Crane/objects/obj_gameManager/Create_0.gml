@@ -1,7 +1,9 @@
+window_set_size(room_width*1, room_height*1)
+
 global.gravityY = 100
-global.timeLeft = 120000000
+//global.timeLeft = 120000000
 global.timeOver = false
-//global.timeLeft = 30000000
+global.timeLeft = 3000000
 
 global.leftIandO = 0
 global.leftDifficult = 0
@@ -11,12 +13,4 @@ global.rightIandO = 0
 global.rightDifficult = 0
 global.rightHoles = 0
 
-window_set_size(room_width*1, room_height*1)
 physics_world_gravity(0, global.gravityY)
-
-// CREATE FLOOR
-instance_create_depth(room_width/2, room_height, -10, obj_floor)
-instance_create_depth(room_width/2, room_height-16, -10, obj_floorDecoration)
-
-// DECORATIVE CRAB
-// instance_create_depth(24*(room_width/25), room_height-(spr_crab.sprite_height/1.5), 0, obj_crab)

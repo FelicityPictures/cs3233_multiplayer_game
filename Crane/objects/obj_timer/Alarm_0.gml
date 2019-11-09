@@ -1,0 +1,3 @@
+/// @description Calculate score
+
+calculateScore()

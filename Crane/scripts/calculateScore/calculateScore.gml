@@ -4,8 +4,7 @@ for(ix = 0; ix < room_width; ix++){
 	check = collision_line(ix, minimumHeight,
 						   ix+32, minimumHeight, obj_block, true, true)
 	if(check == noone){
-		// lose because wall not high enough
-		// instance_create_depth(room_width/2, 100, -100, obj_pirate)
+		room_goto(rm_failure)
 	}
 }
 
@@ -141,17 +140,9 @@ for (i = 0; i < instance_number(obj_block_T); i += 1){
 	}
 }
 
-
+room_goto(rm_success)
 
 /*
-global.leftIandO = 0
-global.leftDifficult = 0
-global.leftHoles = 0
-
-global.righttIandO = 0
-global.rightDifficult = 0
-global.rightHoles = 0
-*/
 startx = 100
 starty = 200
 new = instance_create_depth(startx, starty, -100, printObject)
@@ -174,3 +165,4 @@ new.number = global.rightDifficult
 startx += 100
 new = instance_create_depth(startx, starty, -100, printObject)
 new.number = global.rightHoles
+*/
