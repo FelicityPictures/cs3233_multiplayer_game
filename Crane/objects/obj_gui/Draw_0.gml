@@ -24,4 +24,8 @@ if(room == rm_game){
 		timer = instance_create_depth(timerX, timerY, -50, obj_timer)
 		global.timeOver = true
 	}
+}else if (room == rm_bothLose){
+	
+}else if (room == rm_p1Wins or room == rm_p2Wins){
+	
 }
