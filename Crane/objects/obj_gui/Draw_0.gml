@@ -13,7 +13,6 @@ if(room == rm_title){
 	draw_text_transformed(825, 600, "100 points", 2, 2, 0)
 	draw_text_transformed(935, 630, "each", 2, 2, 0)
 	draw_set_alpha(1)
-	
 }else if(room == rm_game){
 	if(global.timeLeft > 0){
 		draw_sprite(spr_timer, 2, timerX, timerY)
@@ -32,11 +31,34 @@ if(room == rm_title){
 		timer = instance_create_depth(timerX, timerY, -50, obj_timer)
 		global.timeOver = true
 	}
-}
-/*
-else if (room == rm_bothLose){
+}else if (room == rm_failure){
+	draw_set_color(c_white)
+	draw_set_halign(fa_center)
+	draw_text_transformed(room_width/2, 400, "Your walls were not high enough", 2, 2, 0)
+}else if (room == rm_success){
+	// x = 250 and 775
+	scoreX = 350
+	scoreY = 350
+	//print left score
+	draw_set_color(c_black)
+	draw_set_halign(fa_right)
+	draw_text_transformed(scoreX - 100, scoreY, "Total:", 2, 2, 0)
+	draw_text_transformed(scoreX, scoreY, string(global.leftScore), 2, 2, 0)
+	// print left holes
+	scoreY += 50
+	draw_text_transformed(scoreX - 100, scoreY, "Holes:", 2, 2, 0)
+	draw_text_transformed(scoreX, scoreY, string(global.leftHoles), 2, 2, 0)
 	
-}else if (room == rm_p1Wins or room == rm_p2Wins){
+	scoreX = 900
+	scoreY = 350
+	//print left score
+	draw_set_color(c_black)
+	draw_set_halign(fa_right)
+	draw_text_transformed(scoreX - 100, scoreY, "Total:", 2, 2, 0)
+	draw_text_transformed(scoreX, scoreY, string(global.rightScore), 2, 2, 0)
+	// print left holes
+	scoreY += 50
+	draw_text_transformed(scoreX - 100, scoreY, "Holes:", 2, 2, 0)
+	draw_text_transformed(scoreX, scoreY, string(global.rightHoles), 2, 2, 0)
 	
 }
-*/

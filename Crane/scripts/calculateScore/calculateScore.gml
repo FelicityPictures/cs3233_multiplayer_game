@@ -1,17 +1,18 @@
-//Check minimum height
-minimumHeight = 650
+// Check that wall is high enough
+minimumHeight = 550
 for(ix = 0; ix < room_width; ix++){
 	check = collision_line(ix, minimumHeight,
 						   ix+32, minimumHeight, obj_block, true, true)
 	if(check == noone){
 		room_goto(rm_failure)
+		return
 	}
 }
-
+/*
 // find the lowest level for left side
 leftLowest = 0
 for(ix = 0; ix < (room_width/2) - 32; ix += 16){
-	for(iy = 150; iy < room_height - 64; iy++){
+	for(iy = minimumHeight; iy < room_height - 64; iy++){
 		leftCollided = collision_line(ix+1, iy, ix+32, iy, obj_block, true, true)
 		if(leftCollided != noone){
 			if(leftCollided.y > leftLowest){
@@ -26,7 +27,7 @@ for(ix = 0; ix < (room_width/2) - 32; ix += 16){
 // find the lowest level for right side
 rightLowest = 0
 for(ix = room_width/2; ix < room_width; ix += 16){
-	for(iy = 150; iy < room_height - 64; iy++){
+	for(iy = minimumHeight; iy < room_height - 64; iy++){
 		rightCollided = collision_line(ix+1, iy, ix+32, iy, obj_block, true, true)
 		if(rightCollided != noone){
 			if(rightCollided.y > rightLowest){
@@ -37,9 +38,10 @@ for(ix = room_width/2; ix < room_width; ix += 16){
 		}
 	}
 }
+*/
 
 //find hole in leftSide of wall
-for(iy = leftLowest; iy < room_height - 60; iy++){
+for(iy = minimumHeight; iy < room_height - 60; iy++){
 	for(ix = 0; ix < (room_width/2) - 32; ix++){
 		// vertical box check
 		verticalCheck = collision_rectangle(ix+1, iy, ix+30, iy+60, obj_block, true, true)
@@ -54,7 +56,7 @@ for(iy = leftLowest; iy < room_height - 60; iy++){
 		//horizontal box check
 		horizontalCheck = collision_rectangle(ix+1, iy, ix+60, iy+30, obj_block, true, true)
 		if(horizontalCheck == noone){
-			pirateCheck = collision_rectangle(ix+1, iy, ix+30, iy+60, obj_pirate, true, true)
+			pirateCheck = collision_rectangle(ix+1, iy, ix+60, iy+30, obj_pirate, true, true)
 			if(pirateCheck == noone){
 				new = instance_create_depth(ix+1, iy, -300, obj_pirate)
 				new.image_angle = 90
@@ -67,7 +69,7 @@ for(iy = leftLowest; iy < room_height - 60; iy++){
 }
 
 //find hole in rightSide of wall
-for(iy = rightLowest; iy < room_height - 60; iy++){
+for(iy = minimumHeight; iy < room_height - 60; iy++){
 	for(ix = room_width/2; ix < room_width - 32; ix ++){
 		// vertical box check
 		verticalCheck = collision_rectangle(ix+1, iy, ix+30, iy+60, obj_block, true, true)
@@ -82,7 +84,7 @@ for(iy = rightLowest; iy < room_height - 60; iy++){
 		//horizontal box check
 		horizontalCheck = collision_rectangle(ix+1, iy, ix+60, iy+30, obj_block, true, true)
 		if(horizontalCheck == noone){
-			pirateCheck = collision_rectangle(ix+1, iy, ix+30, iy+60, obj_pirate, true, true)
+			pirateCheck = collision_rectangle(ix+1, iy, ix+60, iy+30, obj_pirate, true, true)
 			if(pirateCheck == noone){
 				new = instance_create_depth(ix+1, iy, -300, obj_pirate)
 				new.image_angle = 90
@@ -140,29 +142,7 @@ for (i = 0; i < instance_number(obj_block_T); i += 1){
 	}
 }
 
+global.leftScore = (50*global.leftIandO) + (100*global.leftDifficult) - (50*global.leftHoles)
+global.rightScore = (50*global.rightIandO) + (100*global.rightDifficult) - (50*global.rightHoles)
+
 room_goto(rm_success)
-
-/*
-startx = 100
-starty = 200
-new = instance_create_depth(startx, starty, -100, printObject)
-new.number = global.leftIandO
-startx += 100
-new = instance_create_depth(startx, starty, -100, printObject)
-new.number = global.leftDifficult
-startx += 100
-new = instance_create_depth(startx, starty, -100, printObject)
-new.number = global.leftHoles
-
-
-startx = 100
-starty = 300
-new = instance_create_depth(startx, starty, -100, printObject)
-new.number = global.rightIandO
-startx += 100
-new = instance_create_depth(startx, starty, -100, printObject)
-new.number = global.rightDifficult
-startx += 100
-new = instance_create_depth(startx, starty, -100, printObject)
-new.number = global.rightHoles
-*/
