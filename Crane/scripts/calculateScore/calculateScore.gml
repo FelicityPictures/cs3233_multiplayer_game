@@ -2,7 +2,7 @@
 minimumHeight = 550
 for(ix = 0; ix < room_width; ix++){
 	check = collision_line(ix, minimumHeight,
-						   ix+32, minimumHeight, obj_block, true, true)
+						   ix+80, minimumHeight, obj_block, true, true)
 	if(check == noone){
 		room_goto(rm_failure)
 		return
