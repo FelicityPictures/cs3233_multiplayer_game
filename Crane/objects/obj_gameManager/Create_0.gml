@@ -1,4 +1,4 @@
-window_set_size(room_width*1, room_height*1)
+window_set_size(room_width*2, room_height*2)
 
 startTimerAt = 120000000
 // startTimerAt = 3000000
